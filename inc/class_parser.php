@@ -1051,7 +1051,7 @@ class postParser
 
 		if($added_open_tag)
 		{
-			$code = preg_replace("#<code><span style=\"color: \#([A-Z0-9]{6})\">&lt;\?php( |&nbsp;)(<br />?)#", "<code><span style=\"color: #$1\">", $code);
+			$code = preg_replace("#<code><span style=\"color: \#([a-fA-F0-9]{0,6})\">&lt;\?php( |&nbsp;)(<br />?)#", "<code><span style=\"color: #$1\">", $code);
 		}
 
 		if($added_end_tag)
